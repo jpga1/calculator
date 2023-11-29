@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator-body{
+            background-color: gray;
+            border: 5px solid darkgray;
+            width: 500px;
+            height: 700px;
+            border-radius: 10px;
+            display: grid;
+            padding: 20px;
+            grid-template-rows: 1fr 2fr;
+            gap: 10px;
+        }
+
+        .output{
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        .input{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .clear-button{
+            grid-column: 1/5;
+        }
+
+        button{
+            font-size: 24px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-body">
+        <div class="output"></div>
+        <div class="input">
+            <button class="clear-button">AC</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>&times;</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+            <button>+</button>
+        </div>
+    </div>
+</body>
+</html>
