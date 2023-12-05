@@ -1,10 +1,23 @@
-const buttons = document.querySelectorAll('button')
 const outputDisplay = document.querySelector('.output')
+const currentCalculation = document.querySelector('.current-calculation')
+const currentInput = document.querySelector('.current-input')
 
+const numberButtons = document.querySelectorAll('.number-button')
+const operationButtons = document.querySelectorAll('.operation-button')
 
-buttons.forEach(button => {
-    if(button.innerText != document.querySelector('.clear-button').innerText && button.innerText != document.querySelector('.equals-button').innerText)
-        button.addEventListener('click', () => {
-            outputDisplay.append(button.innerText)
-        })
+const clearButton = document.querySelector('.clear-button')
+const equalsButton = document.querySelector('.equals-button')
+
+numberButtons.forEach(numberButton => {
+    numberButton.addEventListener('click', () => {
+        outputDisplay.append(numberButton.innerText)
+    })
+})
+
+operationButtons.forEach(operationButton => {
+    operationButton.addEventListener('click', () => {
+        currentCalculation.innerText = currentInput.innerText + ' ' + operationButton.innerText
+        
+        currentInput.innerText = ""
+    })
 })
