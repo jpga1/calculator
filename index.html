@@ -10,26 +10,44 @@
         body{
             background-color: black;
             height: 100vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
+            font-family: Arial, Helvetica, sans-serif;
         }
         .calculator-body{
-            flex-shrink: 0;
+            /* flex-shrink: 0; */
             background-color: gray;
             border: 5px solid darkgray;
             width: 400px;
             height: 600px;
             border-radius: 10px;
-            display: grid;
             padding: 20px;
+
+            display: grid;
             grid-template-rows: 1fr 2fr;
             gap: 10px;
         }
 
         .output{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 3fr;
+
+            font-size: 24px;
             background-color: lightgray;
             border-radius: 10px;
+            padding: 10px;
+        }
+
+        .current-calculation{
+            text-align: end;
+        }
+
+        .current-input{
+            text-align: end;
         }
 
         .input{

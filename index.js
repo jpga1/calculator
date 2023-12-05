@@ -1,4 +1,4 @@
-const outputDisplay = document.querySelector('.output')
+const outputDisplay = document.querySelector('.current-input')
 const currentCalculation = document.querySelector('.current-calculation')
 const currentInput = document.querySelector('.current-input')
 
