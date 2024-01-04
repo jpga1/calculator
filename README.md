@@ -21,3 +21,4 @@ A calculator web application that performs fundamental arithmetic functions.
 1. Input values
 2. Input an operation
 3. Press the '=' button
+4. Press AC to reset
